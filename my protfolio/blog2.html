@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Data Mining vs. Machine Learning: Differences and Overlaps">
+    <title>Data Mining vs. Machine Learning</title>
+    <link rel="stylesheet" href="D:\my protfolio\.css">
+    <script>
+        function toggleText() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("readMoreBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="blog-container">
+        <header>
+            <h1>Data Mining vs. Machine Learning: Unraveling the Differences and Overlaps</h1>
+        </header>
+
+        <section class="content">
+            <div class="blog-box">
+                <h2>Introduction</h2>
+                <p>In today’s data-driven world, terms like "data mining" and "machine learning" are often used interchangeably. While they share common ground, they serve distinct purposes and utilize different methodologies. This blog will explore their differences, overlaps, and unique contributions to the field of data science.</p>
+
+                <p id="dots">...</p>
+                <div id="more" style="display: none;">
+                    <h2>What is Data Mining?</h2>
+                    <p>Data mining is the process of discovering patterns, relationships, and insights from large datasets. Often considered the cornerstone of data science, it involves using statistical and computational techniques to sift through data and extract meaningful information.</p>
+
+                    <h2>What is Machine Learning?</h2>
+                    <p>Machine learning (ML) is a subset of artificial intelligence (AI) that enables systems to learn and improve from data without being explicitly programmed. It focuses on developing algorithms that allow computers to make predictions or decisions based on input data.</p>
+
+                    <h2>Key Differences and Overlaps</h2>
+                    <p>While data mining focuses on discovering existing patterns, machine learning aims to predict future outcomes. For instance, a retailer might use data mining to analyze past sales trends and machine learning to forecast future sales based on those insights.</p>
+                </div>
+                <button id="readMoreBtn" onclick="toggleText()">Read more</button>
+            </div>
+        </section>
+
+        <footer>
+            <p>Created with care to showcase the differences and synergies of data mining and machine learning.</p>
+        </footer>
+    </div>
+</body>
+</html>
